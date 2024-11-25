@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Login Page</title>
+</head>
+
+<body>
+  <div class="switch-mode">
+    <div class="switch-mode-content">
+      <span class="light">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#EAF0F7">
+          <path
+            d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z">
+          </path>
+        </svg>
+      </span>
+      <span class="dark">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#14162E">
+          <path
+            d="M11.3807 2.01886C9.91573 3.38768 9 5.3369 9 7.49999C9 11.6421 12.3579 15 16.5 15C18.6631 15 20.6123 14.0843 21.9811 12.6193C21.6613 17.8537 17.3149 22 12 22C6.47715 22 2 17.5228 2 12C2 6.68514 6.14629 2.33869 11.3807 2.01886Z">
+          </path>
+        </svg>
+      </span>
+    </div>
+    <div class="overlay"></div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="navigations">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle">
+            <div class="bars bar-1"></div>
+            <div class="bars bar-2"></div>
+            <div class="bars bar-3"></div>
+          </label>
+          <nav class="links">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">pages</a></li>
+            <li><a href="#">contact</a></li>
+          </nav>
+        </div>
+        <div class="action">
+          <div class="language">
+            <div class="langue">
+              <span class="txt">english</span>
+              <div class="arrow">
+                <img src="imgs/arrow-light.svg" alt="arrow-light" />
+                <img src="imgs/arrow-dark.svg" alt="arrow-dark" />
+              </div>
+            </div>
+            <ul class="dropdown">
+              <li>nrabic</li>
+            </ul>
+          </div>
+          <a href="Sign-in.html" class="sign-in">sign in</a>
+          <a href="Register.html"><button class="register-btn" value="register">register</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="login-section">
+    <div class="container">
+      <div class="login-section-content">
+        <div class="info">
+          <h1 class="title">Sign In to Recharge Direct</h1>
+          <p class="desc">
+            if you don't have an account you can
+            <a href="Register.html" class="link">Register here!</a>
+          </p>
+        </div>
+        <div class="image">
+          <img src="imgs/recover.svg" alt="recover" />
+        </div>
+        <div class="action">
+          <form class="form">
+            <div class="input">
+              <input type="email" name="email" placeholder="enter email" />
+              <span class="clear">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="19" height="19"
+                  fill="rgba(102,112,133,1)">
+                  <path
+                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 10.5858L14.8284 7.75736L16.2426 9.17157L13.4142 12L16.2426 14.8284L14.8284 16.2426L12 13.4142L9.17157 16.2426L7.75736 14.8284L10.5858 12L7.75736 9.17157L9.17157 7.75736L12 10.5858Z">
+                  </path>
+                </svg>
+              </span>
+            </div>
+            <div class="input">
+              <input type="submit" value="recover password" />
+            </div>
+          </form>
+          <div class="devider">Or continue with</div>
+          <ul class="login-other-ways">
+            <li class="google">
+              <a href="#">
+                <img src="imgs/google-icon.svg" alt="google-icon" />
+              </a>
+            </li>
+            <li class="apple">
+              <a href="#">
+                <img src="imgs/apple-icon.svg" alt="apple-icon" />
+              </a>
+            </li>
+            <li class="facebook">
+              <a href="#">
+                <img src="imgs/facebook-icon.svg" alt="facebook-icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Todo JS File -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>
